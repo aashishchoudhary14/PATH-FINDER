@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Optional: Add a smooth transition for the nodes */
+.node {
+  transition: transform 0.3s ease;
+}
