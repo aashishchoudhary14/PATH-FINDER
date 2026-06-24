@@ -1,77 +1,70 @@
-# React + TypeScript + Vite
+# 🧭 Pathfinding Visualizer (React + C++ WebAssembly)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Live Demo: https://path-finder-henna.vercel.app/
 
-Currently, two official plugins are available:
+A high-performance pathfinding visualizer built with **React** and **C++ compiled to WebAssembly (WASM)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Unlike normal visualizers that run algorithms in JavaScript, this project executes core graph algorithms in **C++ inside the browser**, making it faster and more system-oriented.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+# ⚡ What Makes This Different
 
-Note: This will impact Vite dev & build performances.
+Most pathfinding visualizers:
+- Use only JavaScript
+- Focus only on UI animations
+- Do not handle performance at scale
 
-## Expanding the ESLint configuration
+This project:
+- Uses **C++ (WASM)** for algorithm execution
+- Has **hybrid architecture (React + JS + WASM)**
+- Supports large grid performance efficiently
+- Clearly separates UI and computation logic
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 🧠 Algorithms Implemented
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- BFS (Shortest path in unweighted grid)
+- DFS (Exploration based)
+- Dijkstra’s Algorithm (Weighted shortest path)
+- A* Search (Heuristic based optimal search)
+- Greedy Best First Search (Fast heuristic search)
+- **Bidirectional BFS (optimized BFS from both ends)**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+# 🧱 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Click & drag wall drawing
+- Random maze generation
+- Clear grid option
+- Start and end node selection
+- Step-by-step visualization
+- Animated path tracking
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 🏗️ Architecture
 
-```
+React UI  
+→ JavaScript Controller  
+→ WebAssembly (C++ Algorithms)  
+→ Returns visited nodes + path  
+→ React animation system
+
+---
+
+# 🚀 Key Idea
+
+This project demonstrates:
+- Graph algorithms in real-world usage
+- Trade-offs between BFS, DFS, Dijkstra, A*, Greedy, Bidirectional BFS
+- High-performance execution using WebAssembly in browser
+
+---
+
+# 👨‍💻 Author
+
+Aashish Choudhary  
+GitHub: https://github.com/aashishchoudhary14
