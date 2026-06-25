@@ -1,6 +1,6 @@
 # 🧭 Pathfinding Visualizer (React + C++ WebAssembly)
 
-🚀 Live Demo: https://path-finder-henna.vercel.app/
+🚀 [Live Demo]: https://path-finder-henna.vercel.app/
 
 A high-performance pathfinding visualizer built with **React** and **C++ compiled to WebAssembly (WASM)**.
 
