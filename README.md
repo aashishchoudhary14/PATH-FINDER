@@ -67,4 +67,4 @@ This project demonstrates:
 # 👨‍💻 Author
 
 Aashish Choudhary  
-[![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/aashishchoudhary14)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&style=flat&logoColor=white)](https://github.com/aashishchoudhary14)
