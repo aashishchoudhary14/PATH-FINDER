@@ -67,4 +67,4 @@ This project demonstrates:
 # 👨‍💻 Author
 
 Aashish Choudhary  
-GitHub: https://github.com/aashishchoudhary14
+[![GitHub](https://cdn-icons-png.flaticon.com/512/25/25231.png)](https://github.com/aashishchoudhary14)
